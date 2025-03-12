@@ -1,12 +1,11 @@
 .hero {
-
+    height: 100vh;
     // .hero__container
 
     &__container {
         --container-max-width: 1920px;
         --container-padding-inline: 0px;
     }
-
     // .hero__wrapper
 
     &__wrapper {
@@ -16,7 +15,7 @@
         @media screen and (max-width: 1024px){
             grid-template-columns: 1fr;
             gap: 120px;
-            padding-top: 120px;
+            padding-top: 160px;
         }
     }
     
