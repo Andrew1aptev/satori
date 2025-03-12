@@ -13,7 +13,6 @@
         position: relative;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
         @media screen and (max-width: 1024px){
             grid-template-columns: 1fr;
             gap: 120px;
@@ -25,10 +24,11 @@
 
     &__content {
         align-self: center;
-        justify-self: end;
+        justify-self: center;
+        max-width: 600px;
         @media screen and (max-width: 1024px){
-            padding-inline: 20px;
-            justify-self: center;
+            padding-inline: 15px;
+            max-width: 630px;
         }
     }
 
@@ -41,23 +41,30 @@
         line-height: 1.4;
         font-weight: 500;
         margin-bottom: 30px;
-        white-space: pre-line;
-        word-wrap: break-word;
+        text-transform: uppercase;
         @media screen and (max-width: 1024px) {
-            font-size: 1.875rem;
+            font-size: 1.875rem; //30px
+            margin-bottom: 20px;
         }
     }
 
     // .hero__description
 
     &__description {
+        max-width: 495px;
         margin-bottom: 60px;
-        white-space: pre-line;
+        @media screen and (max-width: 1024px){
+            margin-bottom: 40px;
+        }
     }
 
     // .hero__button
 
-    &__button {}
+    &__button {
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+    }
 
     // .hero__decoration-image
 
