@@ -1,0 +1,27 @@
+:root {
+  --container-max-width: 1200px;
+  --container-padding-inline: 15px;
+  // fonts
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Lora", sans-serif;
+  --third-family: "SF Pro Text", sans-serif;
+  --font3: "Poppins", sans-serif;
+  --font4: "Rubik", sans-serif;
+
+  //colors
+  --body-color: #f5f5f5;
+  // button
+  --button-bg: #f5f5f5;
+  --button-bg-hover: #60604c;
+  --button-color: #2c2b2b;
+  --button-color-hover: #f5f5f5;
+  --button-color-border: #2c2b2b;
+
+	--hover: #e5e5e5;
+	--red-error: #b3261e;
+	--text-dark: #2c2b2b;
+	--text-white: #f5f5f5;
+	--text-grey: #727272;
+	--button-olive: #60604c;
+	--text-light-olive: #878774;
+}

@@ -1,0 +1,25 @@
+@mixin color-style($default: (), $hover: ()) {
+
+	// Базовые стили
+	@each $property, $value in $default {
+		#{$property}: $value;
+	}
+
+	// Для устройств с hover поддержкой
+	@media (hover: hover) {
+		&:hover:not(:disabled) {
+			@each $property, $value in $hover {
+				#{$property}: $value;
+			}
+		}
+	}
+
+	// Для тач-устройств
+	@media (hover: none) {
+		&:active:not(:disabled) {
+			@each $property, $value in $hover {
+				#{$property}: $value;
+			}
+		}
+	}
+}

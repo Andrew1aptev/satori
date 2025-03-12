@@ -1,0 +1,14 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    line-height: 1.6;
+    font-weight: 500;
+    background-color: var(--body-color);
+}
+
+/*Блокируем скролл, если много контента*/
+.scroll-lock {
+    overflow: hidden;
+}
